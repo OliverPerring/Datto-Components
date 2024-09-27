@@ -25,9 +25,21 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Compile Include="Datto-Components.ps1" />
+    <Folder Include="CPU and Memory\" />
+    <Folder Include="CPU and Memory\Component Files\" />
+    <Folder Include="Host File Changes\" />
+    <Folder Include="Host File Changes\Component Files\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CPU and Memory\Component Files\command.ps1" />
+    <Content Include="CPU and Memory\Component Files\icon.png" />
+    <Content Include="CPU and Memory\Component Files\resource.xml" />
+    <Content Include="CPU and Memory\Document Current CPU and Memory use to UDF.cpt" />
+    <Content Include="Host File Changes\Component Files\command.ps1" />
+    <Content Include="Host File Changes\Component Files\icon.png" />
+    <Content Include="Host File Changes\Component Files\resource.xml" />
+    <Content Include="Host File Changes\HOSTS Integrity Monitor - Hash Check WIN.cpt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\PowerShell Tools for Visual Studio\PowerShellTools.targets" Condition="Exists('$(MSBuildExtensionsPath)\PowerShell Tools for Visual Studio\PowerShellTools.targets')" />
 </Project>
